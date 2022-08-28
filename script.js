@@ -1,4 +1,4 @@
-/*var circle = document.createElement('div');
+var circle = document.createElement('div');
 
 document.onmousemove = function(e)
 {
@@ -142,10 +142,10 @@ function ReadCSVFile()
         allTextLines = allText.split(/\r\n|\n/);
     };
 }
-*/
 
 
-function CalcTaxaUnitAtual(area)
+
+/*function CalcTaxaUnitAtual(area)
 {
   let taxaunit = 0;
   if (area <= 80)
@@ -272,3 +272,4 @@ document.getElementById('calc').innerHTML+= "N° licenciamentos = " + N * 500 + 
 N = 10000;
 arrecadacao = CalcArrecadacaoMetodo2(N, 'taxa proposta');
 document.getElementById('calc').innerHTML+= "N° licenciamentos = " + N * 500 + "<br>arrecadação = R$ " + arrecadacao.toFixed(2) + "<br><br>";
+*/
