@@ -1,0 +1,111 @@
+body {
+    background-image: none;
+    background-color: orange;
+}
+
+/* nav bar*/
+.navbar {
+    overflow: hidden;
+    background-color: darkgreen;
+}
+.navitem {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navitem:hover:not(.active){
+    cursor: pointer;
+    background-color: green;
+}
+.navdropdown {
+    float: left;
+    overflow: hidden;
+}
+.navbtn {
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbtn:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.navdropdown:hover .navbtn {
+  background-color: green;
+}
+.navdropdown:hover .navdropdown_items{
+    display: block;
+}
+.navdropdownitem {
+    display: block;
+    float: none;
+    padding: 12px 16px;
+    text-align: left;
+}
+.navdropdown_items {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+.navdropdown_items a{
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px black;
+    background-color: darkgreen;
+}
+.navdropdown_items:active .navbtn{
+    background-color: green;
+}
+.navdropdown_items a:hover{
+    background-color: lightgreen;
+}
+
+.active {
+    background-color: lightgreen;
+}
+
+/* descrição das classes */
+.classedescription {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    max-width: 60%;
+    align-content: stretch;
+}
+.classedescription img {
+    float: left;
+}
+
+/* descrição das magias */
+.magiasdescription {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+.magia {
+    background-color: chocolate;
+    padding: 5px;
+    margin: 5px;
+    color: aqua;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(160, 81, 24);
+}
