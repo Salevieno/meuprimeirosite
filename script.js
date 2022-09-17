@@ -1,6 +1,6 @@
 var circle = document.createElement('div');
 
-document.onmousemove = function(e)
+document.onmousemove = function(e) // change
 {
     var event = e || window.event;
     window.mouseX = event.clientX;
