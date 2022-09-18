@@ -129,7 +129,7 @@ function CarregarMagias(classe)
 
 function ReadCSVFile()
 {
-    var allText =[];
+    /*var allText =[];
     var allTextLines = [];
     var Lines = [];
     var txtFile = new XMLHttpRequest();
@@ -140,7 +140,13 @@ function ReadCSVFile()
         allText = txtFile.responseText;
         allTextLines = allText.split(/\r\n|\n/);
     };
-    alert(allText)
+    alert(allText)*/
+    
+    const fs = require("fs");
+
+    fs.readFile("./example.csv", "utf8", function (err, data) {
+    console.log(data);
+});
 }
 
 ReadCSVFile();
