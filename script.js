@@ -132,7 +132,6 @@ function ReadCSVFile()
     var allText =[];
     var allTextLines = [];
     var Lines = [];
-    alert(1)
     var txtFile = new XMLHttpRequest();
     txtFile.open("GET", "./craft.csv", true);
     alert($.csv.toObjects("./craft.csv"));
@@ -141,6 +140,7 @@ function ReadCSVFile()
         allText = txtFile.responseText;
         allTextLines = allText.split(/\r\n|\n/);
     };
+    alert(allText)
 }
 
 ReadCSVFile();
