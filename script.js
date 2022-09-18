@@ -132,10 +132,10 @@ function ReadCSVFile()
     var allText =[];
     var allTextLines = [];
     var Lines = [];
-
+    alert(1)
     var txtFile = new XMLHttpRequest();
-    txtFile.open("GET", "file://C:\Users\SALVIO.005867\Desktop", true);
-    alert($.csv.toObjects("file://C:\Users\SALVIO.005867\Desktop"));
+    txtFile.open("GET", "./craft.csv", true);
+    alert($.csv.toObjects("./craft.csv"));
     txtFile.onreadystatechange = function()
     {
         allText = txtFile.responseText;
